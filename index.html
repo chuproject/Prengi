@@ -106,8 +106,8 @@
             <nav>
               <ul class="promo_menu">
                 <li><a href="" class="promo_link">Главная</a></li>
-                <li><a href="" class="promo_link">Модули</a></li>
-                <li><a href="" class="promo_link">Отрасли</a></li>
+                <li><a href="#modules" class="promo_link">Модули</a></li>
+                <li><a href="#industry" class="promo_link">Отрасли</a></li>
                 <li><a href="" class="promo_link">О нас</a></li>
                 <li><a href="" class="promo_link">Наши обязательства</a></li>
               </ul>
@@ -131,7 +131,7 @@
         </div>
 
         <div class="promo_right">
-          <img src="img/main/tel.png" alt="tel">
+          <img class="promo_tel" src="img/main/tel.png" alt="tel">
         </div>
 
         <div class="promo_arrows">
@@ -150,7 +150,7 @@
   </section>
 
   <!-- Секция "С PRENGI" -->
-  <section class="capabilities">
+  <section class="capabilities" id="modules">
     <div class="container">
 
       <div class="capabilities_wrapper">
@@ -210,7 +210,7 @@
 
   <!-- Секция "Prengi предоставляет экспертные решения
 для Вашей отрасли" -->
-  <section class="solutions">
+  <section class="solutions" id="industry">
 
     <div class="container">
       <h2 class="solutions_title">Prengi предоставляет экспертные решения<br>
@@ -245,13 +245,18 @@
       </div>
 
       <div class="solutions_slider">
-        <a href="#" class="solutions_arrowlink"><img src="img/solutions/big_arrow_left.png"
-            alt="solutions_arrow_left"></a>
 
-        <img class="solutions_img" src="img/solutions/mac.png" alt="mac">
+        <div class="solution_arrowlink">
+          <a href="#"><img src="img/solutions/big_arrow_left.png" alt="solutions_arrow_left"></a>
+        </div>
 
-        <a href="#" class="solutions_arrowlink"><img src="img/solutions/big_arrow_right.png"
-            alt="solutions_arrow_right"></a>
+        <div class="solution_mac">
+          <img class="solutions_img" src="img/solutions/mac.png" alt="mac">
+        </div>
+
+        <div class="solutions_arrowlink">
+          <a href="#"><img src="img/solutions/big_arrow_right.png" alt="solutions_arrow_right"></a>
+        </div>
       </div>
 
 
@@ -362,7 +367,7 @@
 
         <div class="footer_wrapper">
 
-          <div class="footer_block">
+          <div class="footer_block footer_logblock">
             <div class="footer_logo"><img src="img/logo/down_logo.png" alt="footer_logo"></div>
           </div>
           <div class="footer_block">

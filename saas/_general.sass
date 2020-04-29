@@ -1,5 +1,5 @@
 .container
-    width: 1140px
+    max-width: 1140px
     margin: 0 auto
     padding: 0
     position: relative
@@ -14,15 +14,15 @@
     &_item
         display: flex        
         &:nth-child(1)
-            width: 169px
+            flex-basis: 169px
         &:nth-child(2)
-            width: 195px 
+            flex-basis: 195px 
         &:nth-child(3)
-            width: 203px             
+            flex-basis: 203px             
         &:nth-child(4)
-            width: 210px
+            flex-basis: 210px
         &:nth-child(5)
-            width: 228px
+            flex-basis: 228px
             margin-right: 0
             
     &_img
@@ -101,9 +101,9 @@
             cursor: pointer
     &_left
         margin-top: 106px
-        width: 529px
+        flex-basis: 529px
     &_right
-        width: 434px
+        flex-basis: 434px
         height: 569px
     &_arrows    
         position: absolute
@@ -138,8 +138,8 @@
         justify-content: space-between
         flex-wrap: wrap
     &_item
-        width: 360px;
-        height: 255px;
+        flex-basis: 360px;
+        min-height: 255px;
         border: 1px solid #ececec
         margin-right: 30px
         &:last-child
@@ -177,7 +177,7 @@
     &_title 
         @include h2_title
     &_wrapper
-        width: 843px;
+        max-width: 843px;
         height: 65px;
         border: 1px solid #ffffff
         border-radius: 6px
@@ -185,7 +185,7 @@
     &_present
         list-style-type: none;
         display: flex;
-        width: 778px;
+        max-width: 778px;
         height: 49px;
         justify-content: space-between;
         align-items: center;
@@ -215,9 +215,11 @@
         display: flex
         justify-content: center
         align-items: center
-    &_img
+    &_mac
         padding-right: 30px
-        padding-left: 30px    
+        padding-left: 30px 
+        
+
 .advantages
     min-height: 1334px
     padding: 81px 0 80px 0
@@ -233,7 +235,7 @@
         display: flex
         justify-content: center
         align-items: center
-        width: 570px
+        flex-basis: 570px
         height: 355px
         &:nth-child(1)
             background: url(../img/advantages/back_1.png) center center/cover no-repeat
@@ -252,7 +254,7 @@
         justify-content: center
         align-items: center
         height: 156px
-        width: 570px
+        width: 100%
         background: rgba(0,0,0,0.44)         
     &_text        
         color: #ffffff
